@@ -1,0 +1,35 @@
+[application]
+
+icon = "res://sprites/logo.png"
+main_scene = "res://scenes/logo.tscn"
+name = "Grana"
+
+[autoload]
+
+game = "*res://scripts/game.gd"
+musicaF = "*res://scenes/musicaF.tscn"
+transition = "*res://scenes/transition.tscn"
+
+[display]
+
+handheld/emulate_touchscreen = true
+handheld/orientation = "portrait"
+stretch/mode = "2d"
+window/height = 1280
+window/test_height = 640
+window/test_width = 360
+window/width = 720
+
+[image_loader]
+
+filter = false
+gen_mipmaps = false
+
+[input]
+
+responder = [ InputEvent(MBUTTON,1) ]
+
+[physics_2d]
+
+motion_fix_enabled = true
+
