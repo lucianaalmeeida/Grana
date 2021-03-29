@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://sprites/menu-novo.png" type="Texture" id=1]
+[ext_resource path="res://fontes/pontuacao1.fnt" type="BitmapFont" id=2]
+[ext_resource path="res://scripts/pontuacao.gd" type="Script" id=3]
+[ext_resource path="res://scripts/poupanca.gd" type="Script" id=4]
+
+[node name="pontuacao" type="Node"]
+
+
+[node name="Sprite 2" type="Sprite" parent="."]
+
+position = Vector2( 59.073, 26.6035 )
+scale = Vector2( 0.35, 0.35 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Label" type="Label" parent="."]
+
+focus_ignore_mouse = true
+focus_stop_mouse = true
+size_flags_horizontal = 2
+size_flags_vertical = 0
+margin_left = 166.0
+margin_top = 53.0
+margin_right = 262.0
+margin_bottom = 88.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.12549, 0.121569, 0.121569, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+text = "0"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script = ExtResource( 3 )
+
+[node name="Label1" type="Label" parent="."]
+
+focus_ignore_mouse = true
+focus_stop_mouse = true
+size_flags_horizontal = 2
+size_flags_vertical = 0
+margin_left = 167.0
+margin_top = 127.0
+margin_right = 264.0
+margin_bottom = 163.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.12549, 0.121569, 0.121569, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+text = "0"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script = ExtResource( 4 )

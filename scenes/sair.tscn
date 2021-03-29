@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/fecharB.png" type="Texture" id=1]
+[ext_resource path="res://sprites/fecharB-press.png" type="Texture" id=2]
+[ext_resource path="res://scripts/sair.gd" type="Script" id=3]
+[ext_resource path="res://music/click.ogg" type="AudioStream" id=4]
+
+[node name="sair" type="TouchScreenButton"]
+
+position = Vector2( 574.544, 26.7962 )
+scale = Vector2( 0.15, 0.15 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 2 )
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+script = ExtResource( 3 )
+
+[node name="Timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 0.1
+one_shot = true
+autostart = false
+
+[node name="click" type="AudioStreamPlayer" parent="."]
+
+stream = ExtResource( 4 )
+playing = false
+loop = false
+volume_db = 0.0
+stream_autoplay = false
+stream_paused = false
+loop_restart_time = 0.0
+buffering_ms = 500
+
+[connection signal="pressed"  from="."  to="." method="_on_sair_pressed" binds=[  ]]

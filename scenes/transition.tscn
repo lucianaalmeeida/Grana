@@ -1,0 +1,222 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scripts/script.gd" type="Script" id=1]
+[ext_resource path="res://sprites/nivel-bloq.png" type="Texture" id=2]
+[ext_resource path="res://sprites/nivel.png" type="Texture" id=3]
+[ext_resource path="res://sprites/fundo-carregando.png" type="Texture" id=4]
+
+[sub_resource type="Animation" id=1]
+
+resource_name = "Fade"
+length = 1.5
+loop = false
+step = 0.1
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "change_scene"
+} ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite1:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 2 ), ExtResource( 3 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite2:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 2 ), ExtResource( 3 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sprite3:texture")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 2 ), ExtResource( 3 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Sprite4:texture")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 2 ), ExtResource( 3 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Sprite5:texture")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 2 ), ExtResource( 3 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Sprite6:texture")
+tracks/6/interp = 1
+tracks/6/imported = false
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 2 ), ExtResource( 3 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("fundo:self_modulate")
+tracks/7/interp = 1
+tracks/7/imported = false
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.1, 1.3, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Sprite1:self_modulate")
+tracks/8/interp = 1
+tracks/8/imported = false
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.1, 1.3, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Sprite2:self_modulate")
+tracks/9/interp = 1
+tracks/9/imported = false
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.1, 1.3, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Sprite3:self_modulate")
+tracks/10/interp = 1
+tracks/10/imported = false
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.1, 1.3, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Sprite4:self_modulate")
+tracks/11/interp = 1
+tracks/11/imported = false
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.1, 1.3, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Sprite5:self_modulate")
+tracks/12/interp = 1
+tracks/12/imported = false
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.1, 1.3, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Sprite6:self_modulate")
+tracks/13/interp = 1
+tracks/13/imported = false
+tracks/13/keys = {
+"times": PoolRealArray( 0, 0.1, 1.3, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="transition" type="CanvasLayer"]
+
+layer = 10
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+script = ExtResource( 1 )
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/Fade = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="fundo" type="Sprite" parent="."]
+
+texture = ExtResource( 4 )
+centered = false
+self_modulate = Color( 1, 1, 1, 0 )
+
+[node name="Sprite1" type="Sprite" parent="."]
+
+position = Vector2( 143.824, 1003.21 )
+scale = Vector2( 0.136573, 0.136573 )
+texture = ExtResource( 3 )
+self_modulate = Color( 1, 1, 1, 0 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+
+position = Vector2( 232.824, 1002.21 )
+scale = Vector2( 0.136573, 0.136573 )
+texture = ExtResource( 3 )
+self_modulate = Color( 1, 1, 1, 0 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+
+position = Vector2( 317.824, 1003.21 )
+scale = Vector2( 0.136573, 0.136573 )
+texture = ExtResource( 3 )
+self_modulate = Color( 1, 1, 1, 0 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+
+position = Vector2( 406.824, 1003.21 )
+scale = Vector2( 0.136573, 0.136573 )
+texture = ExtResource( 3 )
+self_modulate = Color( 1, 1, 1, 0 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+
+position = Vector2( 490.824, 1001.54 )
+scale = Vector2( 0.136573, 0.136573 )
+texture = ExtResource( 3 )
+self_modulate = Color( 1, 1, 1, 0 )
+
+[node name="Sprite6" type="Sprite" parent="."]
+
+position = Vector2( 580.824, 1003.21 )
+scale = Vector2( 0.136573, 0.136573 )
+texture = ExtResource( 3 )
+self_modulate = Color( 1, 1, 1, 0 )

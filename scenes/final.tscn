@@ -1,0 +1,214 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://scripts/final.gd" type="Script" id=1]
+[ext_resource path="res://sprites/fundo-final.png" type="Texture" id=2]
+[ext_resource path="res://fontes/final1.fnt" type="BitmapFont" id=3]
+[ext_resource path="res://fontes/final2.fnt" type="BitmapFont" id=4]
+[ext_resource path="res://scenes/sair.tscn" type="PackedScene" id=5]
+[ext_resource path="res://music/click.ogg" type="AudioStream" id=6]
+[ext_resource path="res://music/audio-fundo.ogg" type="AudioStream" id=7]
+
+[sub_resource type="Animation" id=1]
+
+resource_name = "play"
+length = 2.8
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("premio1:position")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7, 1.4, 2.1, 2.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 26.6788, 806.474 ), Vector2( 147.267, 878.826 ), Vector2( 322.119, 921.032 ), Vector2( 484.913, 829.084 ), Vector2( 290.465, 824.562 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("premio4:position")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.7, 1.4, 2.1, 2.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 184.311, 898.088 ), Vector2( 357.656, 902.61 ), Vector2( 470.707, 816.691 ), Vector2( 277.767, 800.111 ), Vector2( 33.5762, 782.022 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("premio5:position")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.7, 1.4, 2.1, 2.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 359.878, 879.379 ), Vector2( 492.525, 796.475 ), Vector2( 263.408, 681.917 ), Vector2( 105.136, 825.115 ), Vector2( 121.717, 892.945 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("premio3:position")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.7, 1.4, 2.1, 2.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 475.372, 742.059 ), Vector2( 274.895, 720.956 ), Vector2( 60.8513, 737.536 ), Vector2( 103.057, 886.764 ), Vector2( 303.534, 974.19 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("premio2:position")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.7, 1.4, 2.1, 2.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 256.693, 710.902 ), Vector2( 33.6053, 787.777 ), Vector2( 111.987, 903.843 ), Vector2( 313.972, 929.467 ), Vector2( 463.2, 908.365 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("premio3:z")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = {
+"times": PoolRealArray( 2.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("premio2:z")
+tracks/6/interp = 1
+tracks/6/imported = false
+tracks/6/keys = {
+"times": PoolRealArray( 2.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+
+[node name="final" type="Node"]
+
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+position = Vector2( 1.35411, 0 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="titulo" type="Label" parent="."]
+
+focus_ignore_mouse = true
+focus_stop_mouse = true
+size_flags_horizontal = 2
+size_flags_vertical = 0
+margin_left = 148.0
+margin_top = 308.0
+margin_right = 584.0
+margin_bottom = 473.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.570313, 0.419519, 0.0623779, 1 )
+text = "Parabéns, você finalizou o Grana!"
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="texto" type="Label" parent="."]
+
+focus_ignore_mouse = true
+focus_stop_mouse = true
+size_flags_horizontal = 2
+size_flags_vertical = 0
+margin_left = 75.0
+margin_top = 485.0
+margin_right = 645.0
+margin_bottom = 624.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.21875, 0.0153809, 0.0153809, 1 )
+text = "Número de acertos:
+Número de erros:
+Valor acumulado:"
+align = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="premio1" type="Sprite" parent="."]
+
+position = Vector2( 26.6788, 806.474 )
+scale = Vector2( 0.2, 0.2 )
+centered = false
+
+[node name="premio2" type="Sprite" parent="."]
+
+position = Vector2( 256.693, 710.902 )
+scale = Vector2( 0.2, 0.2 )
+z = 2
+centered = false
+
+[node name="premio3" type="Sprite" parent="."]
+
+position = Vector2( 475.372, 742.059 )
+scale = Vector2( 0.2, 0.2 )
+z = 2
+centered = false
+
+[node name="premio4" type="Sprite" parent="."]
+
+position = Vector2( 184.311, 898.088 )
+scale = Vector2( 0.2, 0.2 )
+centered = false
+
+[node name="premio5" type="Sprite" parent="."]
+
+position = Vector2( 359.878, 879.379 )
+scale = Vector2( 0.2, 0.2 )
+centered = false
+
+[node name="Timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 0.4
+one_shot = true
+autostart = false
+
+[node name="sair" parent="." instance=ExtResource( 5 )]
+
+position = Vector2( 612.544, 26.7962 )
+scale = Vector2( 0.12, 0.12 )
+
+[node name="click" type="AudioStreamPlayer" parent="."]
+
+stream = ExtResource( 6 )
+playing = false
+loop = false
+volume_db = 0.0
+stream_autoplay = false
+stream_paused = false
+loop_restart_time = 0.0
+buffering_ms = 500
+
+[node name="StreamPlayer" type="AudioStreamPlayer" parent="."]
+
+stream = ExtResource( 7 )
+playing = false
+loop = false
+volume_db = 0.0
+stream_autoplay = true
+stream_paused = false
+loop_restart_time = 0.0
+buffering_ms = 500
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/play = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "play"
