@@ -1,0 +1,149 @@
+[gd_resource type="Animation" load_steps=1 format=2]
+
+
+[resource]
+
+resource_name = "moedas"
+length = 1.2
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("moedas/m1:visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("moedas/m2:visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("moedas/m3:visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("moedas/m4:visible")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.3, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("moedas/m5:visible")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.3, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("moedas/m6:visible")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.3, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("moedas/m7:visible")
+tracks/6/interp = 1
+tracks/6/imported = false
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.3, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("moedas/m7:position")
+tracks/7/interp = 1
+tracks/7/imported = false
+tracks/7/keys = {
+"times": PoolRealArray( 0.3, 0.5, 0.7, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 360, 1000 ), Vector2( 426.528, 978.498 ), Vector2( 439.115, 792.201 ), Vector2( 373.659, 399.466 ), Vector2( 300.651, 57.0813 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("moedas/m6:position")
+tracks/8/interp = 1
+tracks/8/imported = false
+tracks/8/keys = {
+"times": PoolRealArray( 0.3, 0.5, 0.7, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 360, 1000 ), Vector2( 296.387, 990.776 ), Vector2( 298.905, 827.136 ), Vector2( 374.431, 446.989 ), Vector2( 296.387, 56.7709 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("moedas/m5:position")
+tracks/9/interp = 1
+tracks/9/imported = false
+tracks/9/keys = {
+"times": PoolRealArray( 0.3, 0.5, 0.7, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 360, 1000 ), Vector2( 301.298, 940.438 ), Vector2( 356.684, 784.351 ), Vector2( 313.886, 436.932 ), Vector2( 296.263, 54.2669 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("moedas/m4:position")
+tracks/10/interp = 1
+tracks/10/imported = false
+tracks/10/keys = {
+"times": PoolRealArray( 0.3, 0.5, 0.7, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 360, 1000 ), Vector2( 395.834, 934.3 ), Vector2( 413.457, 740.45 ), Vector2( 353.036, 345.197 ), Vector2( 300.168, 60.7159 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("moedas/m3:position")
+tracks/11/interp = 1
+tracks/11/imported = false
+tracks/11/keys = {
+"times": PoolRealArray( 0.3, 0.5, 0.7, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 360, 1000 ), Vector2( 351.636, 929.389 ), Vector2( 288.697, 770.784 ), Vector2( 434.714, 355.391 ), Vector2( 301.285, 63.3575 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("moedas/m2:position")
+tracks/12/interp = 1
+tracks/12/imported = false
+tracks/12/keys = {
+"times": PoolRealArray( 0.3, 0.5, 0.7, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 360, 1000 ), Vector2( 343.041, 876.596 ), Vector2( 335.489, 723.027 ), Vector2( 295.208, 380.642 ), Vector2( 297.726, 58.398 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("moedas/m1:position")
+tracks/13/interp = 1
+tracks/13/imported = false
+tracks/13/keys = {
+"times": PoolRealArray( 0.3, 0.5, 0.7, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 359.002, 1001.83 ), Vector2( 359.002, 1001.83 ), Vector2( 384.177, 835.668 ), Vector2( 442.081, 415.24 ), Vector2( 296.064, 50.1979 ) ]
+}
