@@ -14,5 +14,10 @@ Esse jogo foi desenvolvido utilizando a linguagem [GDScript](https://docs.godote
 O jogo está disponível para **download** na Google Play:
 
 <a href="https://play.google.com/store/apps/details?id=org.godotengine.granabeta&hl=pt_BR" target="_blank">
-   <img src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" height="40">
+   <img src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" height="30">
 </a>
+<br>
+
+---
+
+By Luciana Almeida 💜
