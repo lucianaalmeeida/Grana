@@ -6,6 +6,6 @@ O Grana é um projeto desenvolvido em 2018 pelo IFCE - Campus Canindé, visando 
 
 O jogo está disponível para **download** na Google Play:
 <br><br>
-<a href="https://play.google.com/store/apps/details?id=org.godotengine.granabeta&hl=pt_BR">
+<a href="https://play.google.com/store/apps/details?id=org.godotengine.granabeta&hl=pt_BR" target="_blanck">
    <img src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" height="40">
 </a>
