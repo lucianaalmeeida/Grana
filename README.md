@@ -7,7 +7,7 @@ O Grana é um projeto desenvolvido em 2018 pelo IFCE - Campus Canindé, visando 
 
 **:sparkles: Tecnologias:**
 
-Esse jogo foi desenvolvido utilizando a linguagem [GDScript](https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_basics.html "GDScript") e a Game Engine [Godot](https://godotengine.org/ "Godot"). 
+Esse jogo foi desenvolvido utilizando a linguagem [GDScript](https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_basics.html "GDScript") e utilizando a Game Engine [Godot](https://godotengine.org/ "Godot"). 
 
 **:rainbow: Como executar?**
 
